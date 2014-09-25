@@ -1,0 +1,15 @@
+<div class="container container-main">
+   <div class="header">
+      <h1>My Feed</h1>
+   </div>
+   <div class="row marketing" ng-controller="hn">
+      <div class="list-group" ng-repeat="item in news.items">
+         <a href="{{item.url}}" class="list-group-item">
+             <h4 class="list-group-item-heading">{{item.title}}</h4>
+             <p class="list-group-item-text">Posted By: {{item.postedBy}} {{item.postedAgo}}</p>
+             <p class="list-group-item-text"> {{item.points}} points
+             </p>
+         </a>
+      </div>
+   </div>
+ </div> <!-- /container -->
